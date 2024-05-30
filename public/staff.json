@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Michael Smith",
+    "position": "Doctor",
+    "description": "Dr. Michael Smith is a highly experienced veterinarian dedicated to providing exceptional care for all pets.",
+    "image": "https://i.ibb.co/Qv7LRWv/founder.png"
+  },
+  {
+    "id": 2,
+    "name": "James Anderson",
+    "position": "Founder",
+    "description": "James Anderson is the founder of our pet adoption organization, committed to finding loving homes for all animals.",
+    "image": "https://i.ibb.co/3MLj4Ny/manager.png"
+  },
+  {
+    "id": 3,
+    "name": "David Thompson",
+    "position": "Financial Manager",
+    "description": "David Thompson oversees the financial operations, ensuring that resources are allocated efficiently to support our mission.",
+    "image": "https://i.ibb.co/SKm3mDt/pet-Specialist.png"
+  },
+  {
+    "id": 4,
+    "name": "Mark Brown",
+    "position": "Pet Care Specialist",
+    "description": "Mark Brown is passionate about animal welfare and works tirelessly to ensure the well-being of every pet in our care.",
+    "image": "https://i.ibb.co/Vw8qBC5/dr.jpg"
+  }
+]

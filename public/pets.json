@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Buddy",
+    "image": "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg",
+    "age": 3,
+    "location": "New York",
+    "details": "Meet Buddy, a friendly Labrador Retriever mix looking for a loving home. Buddy is a bundle of energy and joy who loves playing fetch, running in the park, and snuggling up for a good nap. He is great with children and other pets, making him the perfect family companion. Buddy is also very intelligent and responds well to training. He enjoys learning new tricks and commands. Buddy is healthy, vaccinated, and neutered. If you are looking for a loyal and loving friend, Buddy is the perfect match for you. Come meet Buddy and let him win your heart with his wagging tail and infectious enthusiasm.",
+    "adopted": false,
+    "category": "Dog",
+    "adopter": {
+      "email": "zXHbZ@example.com",
+      "name": "Akash Khan",
+      "image": "https://cdn.britannica.com/39/226539-050-D21D7721/Portrait-of-a-cat-with-whiskers-visible.jpg"
+    }
+  },
+  {
+    "name": "Whiskers",
+    "image": "https://cdn.britannica.com/39/226539-050-D21D7721/Portrait-of-a-cat-with-whiskers-visible.jpg",
+    "age": 2,
+    "location": "Los Angeles",
+    "details": "Whiskers is a playful and affectionate orange tabby cat ready to be your new best friend. She has a lively personality and loves to chase after toys and play hide and seek. Whiskers also enjoys lounging by the window and soaking up the sun. She gets along well with other cats and is known for her gentle nature. Whiskers is litter-trained, spayed, and up-to-date on all her vaccinations. With her sweet demeanor and charming antics, Whiskers is sure to bring joy and laughter to her new home. She is looking for a family that will shower her with love and attention.",
+    "adopted": true,
+    "category": "Cat",
+    "adopter": {
+      "email": "zXHbZ@example.com",
+      "name": "Akash Khan",
+      "image": "https://cdn.britannica.com/39/226539-050-D21D7721/Portrait-of-a-cat-with-whiskers-visible.jpg"
+    }
+  },
+  {
+    "name": "Rocky",
+    "image": "https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg",
+    "age": 5,
+    "location": "Chicago",
+    "details": "Rocky is a handsome German Shepherd mix who loves long walks and belly rubs. He has a calm and loyal nature, making him an excellent companion for anyone looking for a steady and trustworthy friend. Rocky enjoys outdoor activities and is happiest when he's on a hike or playing in the yard. He is well-behaved on a leash and knows basic commands such as sit, stay, and come. Rocky is also very protective of his family and makes an excellent watchdog. He is neutered, vaccinated, and in excellent health. If you are looking for a reliable and loving dog, Rocky is the one for you.",
+    "adopted": false,
+    "category": "Dog",
+    "adopter": {
+      "email": "zXHbZ@example.com",
+      "name": "Akash Khan",
+      "image": "https://cdn.britannica.com/39/226539-050-D21D7721/Portrait-of-a-cat-with-whiskers-visible.jpg"
+    }
+  }
+]
