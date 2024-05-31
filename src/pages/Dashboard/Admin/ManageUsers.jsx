@@ -6,8 +6,13 @@ import HelmetCom from '../../../components/Helmet/Helmet'
 import { useQuery } from '@tanstack/react-query'
 const ManageUsers = () => {
   const [users, setUsers] = useState([])
+  const [loading, setLoading] = useState(false)
   useEffect(() => {
-    getAllUsers().then(data => setUsers(data))
+    setLoading(true)
+    getAllUsers().then(data => {
+      setUsers(data)
+      setLoading(false)
+    })
   }, [])
 
   // const {
