@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { clearCookie } from './auth'
 const axiosSecure = axios.create({
-  baseURL: 'http://localhost:5000',
+  baseURL: 'https://pet-pals-hub-server.vercel.app',
   withCredentials: true
 })
 

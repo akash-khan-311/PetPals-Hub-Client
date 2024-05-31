@@ -108,7 +108,11 @@ const Login = () => {
                   onClick={() => setShowPassword(!showPassword)}
                   className='cursor-pointer absolute right-6 top-5  -translate-y-1/2'
                 >
-                  {showPassword ? <FaEye color='black' /> : <FaEyeSlash color='black' />}
+                  {showPassword ? (
+                    <FaEye color='black' />
+                  ) : (
+                    <FaEyeSlash color='black' />
+                  )}
                 </span>
               </div>
             </div>
