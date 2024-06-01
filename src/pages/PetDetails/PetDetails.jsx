@@ -1,5 +1,5 @@
 import { useLoaderData, useParams } from 'react-router-dom'
-
+import { motion } from 'framer-motion'
 import Button from '../../shared/Button/Button'
 import useAuth from '../../hooks/useAuth'
 import AdoptionModal from '../../components/Modal/AdoptionModal'
@@ -65,14 +65,15 @@ const PetDetails = () => {
                   {pet?.description}
                 </li>
               </ol>
-              <button
+              <motion.button
+                whileTap={{ scale: 0.9, transition: { yoyo: Infinity } }}
                 onClick={() => setIsOpen(true)}
                 disabled={pet.adopted && pet.adopter === user?.email}
                 type={'button'}
                 className='md:py-3 md:px-12 py-2 px-6 bg-yellow-700 uppercase text-sm md:text-base font-semibold text-white hover:bg-black transition-all duration-500 rounded-sm disabled:bg-gray-400 disabled:cursor-not-allowed'
               >
                 Adopt now
-              </button>
+              </motion.button>
             </div>
             <AdoptionModal
               isOpen={isOpen}

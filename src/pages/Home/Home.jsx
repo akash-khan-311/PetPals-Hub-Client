@@ -3,6 +3,7 @@ import AboutUs from '../../components/Home/AboutUs'
 import Banner from '../../components/Home/Banner'
 import CallToAction from '../../components/Home/CallToAction'
 import Category from '../../components/Home/Category'
+import Counters from '../../components/Home/Counters'
 import GetInTouch from '../../components/Home/GetInTouch'
 import Review from '../../components/Home/Review'
 import Sponsor from '../../components/Home/Sponsor'
@@ -19,9 +20,9 @@ const Home = () => {
       <CallToAction />
       <Sponsor />
       <Staf />
-
+      <Counters />
       <Review />
-      <GetInTouch/>
+      <GetInTouch />
     </div>
   )
 }

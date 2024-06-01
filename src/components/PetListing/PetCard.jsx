@@ -2,6 +2,7 @@
 
 import { Link } from 'react-router-dom'
 import Button from '../../shared/Button/Button'
+import { motion } from 'framer-motion';
 
 /* eslint-disable react/no-unescaped-entities */
 const PetCard = ({ pet }) => {
@@ -9,9 +10,9 @@ const PetCard = ({ pet }) => {
 
   return (
     <>
-      <div className='relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl'>
+      <div  className='relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl'>
         <div className='relative h-56 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40'>
-          <img src={image} className='w-full h-full' alt='pet image' />
+          <motion.img whileHover={{scale: 1.1, transition: {yoyo: Infinity}}} src={image} className='w-full h-full' alt='pet image' />
         </div>
         <div className='p-6'>
           <h5 className='block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900'>

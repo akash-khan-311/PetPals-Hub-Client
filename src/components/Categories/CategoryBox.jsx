@@ -1,8 +1,10 @@
 import { useNavigate } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const CategoryBox = ({ label, icon: Icon, selected, handleSelectCategory }) => {
   return (
-    <div
+    <motion.div
+      whileHover={{ scale: 0.9 }}
       onClick={handleSelectCategory}
       className={`flex flex-col items-center justify-center gap-2 p-3 border-b-2 text-neutral-500 hover:text-neutral-800 transition cursor-pointer ${
         selected
@@ -12,7 +14,7 @@ const CategoryBox = ({ label, icon: Icon, selected, handleSelectCategory }) => {
     >
       <Icon size={26} />
       <div className='text-sm font-medium'>{label}</div>
-    </div>
+    </motion.div>
   )
 }
 export default CategoryBox

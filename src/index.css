@@ -67,3 +67,9 @@ body {
   background: #d3a832;
 }
 
+.counter-bg {
+  background: url("./assets/images/counter-bg.jpg");
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
