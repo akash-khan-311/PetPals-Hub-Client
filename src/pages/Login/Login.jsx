@@ -9,7 +9,8 @@ import { useState } from 'react'
 import { FaEye, FaEyeSlash } from 'react-icons/fa'
 
 const Login = () => {
-  const { loading, SignIn, setLoading, SignInWithGoogle } = useAuth()
+  const { loading, SignIn, setLoading, SignInWithGoogle } =
+    useAuth()
   const location = useLocation()
   const navigate = useNavigate()
   const from = location.state?.from?.pathname || '/'
@@ -58,6 +59,8 @@ const Login = () => {
       setLoading(false)
     }
   }
+
+
   return (
     <div className='flex justify-center items-center min-h-screen'>
       <div className='flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-yellow-900 text-white'>
@@ -132,9 +135,11 @@ const Login = () => {
           </div>
         </form>
         <div className='space-y-1'>
-          <button className='text-xs hover:underline hover:text-rose-500 text-gray-400'>
-            Forgot password?
-          </button>
+          <Link to={'/resetpassword'}>
+            <button className='text-xs hover:underline hover:text-rose-500 text-gray-400'>
+              Forgot password?
+            </button>
+          </Link>
         </div>
         <div className='flex items-center pt-4 space-x-1'>
           <div className='flex-1 h-px sm:w-16 dark:bg-gray-700'></div>

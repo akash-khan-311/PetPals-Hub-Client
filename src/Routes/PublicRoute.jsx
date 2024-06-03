@@ -18,6 +18,7 @@ import Statistics from '../pages/Dashboard/Common/Statistics'
 import Profile from '../pages/Dashboard/Common/Profile'
 import AdopterRoutes from './AdopterRoutes'
 import AdminRoutes from './AdminRoutes'
+import ResetPassword from '../pages/Login/ForgotPassword'
 
 const Router = createBrowserRouter([
   {
@@ -37,7 +38,8 @@ const Router = createBrowserRouter([
         loader: ({ params }) => getSinglePet(params.id)
       },
       { path: '/login', element: <Login /> },
-      { path: '/signup', element: <SignUp /> }
+      { path: '/signup', element: <SignUp /> },
+      { path: '/resetpassword', element: <ResetPassword /> }
     ]
   },
 

@@ -6,9 +6,12 @@ import AdoptionModal from '../../components/Modal/AdoptionModal'
 import { useState } from 'react'
 import Container from './../../shared/Container'
 import HelmetCom from '../../components/Helmet/Helmet'
+import useRole from '../../hooks/useRole'
 
 const PetDetails = () => {
   const pet = useLoaderData()
+  const [role] = useRole()
+  console.log(role)
   const { user } = useAuth()
   const [petInfo, setPetInfo] = useState({
     user: {
@@ -68,7 +71,10 @@ const PetDetails = () => {
               <motion.button
                 whileTap={{ scale: 0.9, transition: { yoyo: Infinity } }}
                 onClick={() => setIsOpen(true)}
-                disabled={pet.adopted && pet.adopter === user?.email}
+                disabled={
+                  (pet.adopted && pet.adopter === user?.email) ||
+                  role === 'admin'
+                }
                 type={'button'}
                 className='md:py-3 md:px-12 py-2 px-6 bg-yellow-700 uppercase text-sm md:text-base font-semibold text-white hover:bg-black transition-all duration-500 rounded-sm disabled:bg-gray-400 disabled:cursor-not-allowed'
               >
