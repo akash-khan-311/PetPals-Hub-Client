@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react'
 import PetCard from '../../components/PetListing/PetCard'
 import { getAllPets } from '../../api/pet'
@@ -86,7 +85,7 @@ const PetListing = () => {
           ))}
         </div>
       </Container>
-      <div className='mx-auto max-w-screen-xl px-5 md:px-2 lg:px-0'>
+      <Container>
         {filteredPets.length ? (
           <div className=''>
             <InfiniteScroll
@@ -200,7 +199,7 @@ const PetListing = () => {
             </span>
           </div>
         )}
-      </div>
+      </Container>
     </>
   )
 }
