@@ -6,7 +6,7 @@ export const savePetAdoptInfo = async adoptInfo => {
   return data
 }
 // Get All pets form database
-export const getAllPets = async (page) => {
+export const getAllPets = async page => {
   const { data } = await axiosSecure(`/pets?page=${page}&limit=4`)
   return data
 }
